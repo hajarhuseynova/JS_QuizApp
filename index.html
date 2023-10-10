@@ -22,30 +22,30 @@
     <div class="card quiz-box">
       <header class="card-header">
         <div class="title">Quiz App</div>
+        <div class="timer">
+          <div class="time_text">Time:</div>
+          <div class="time_second">10</div>
+        </div>
+        <div class="time_line"></div>
       </header>
       <section class="card-body">
-        <div class="question-text">
-          <span>Hangisi js</span>
-        </div>
-        <div class="option-list">
-          <div class="option correct">
-            <span> a:Node.js</span>
-            <div class="icon"><i class="fas fa-check"></i></div>
-          </div>
-          <div class="option incorrect">
-            <span> a:Node.js</span>
-            <div class="icon"><i class="fas fa-times"></i></div>
-          </div>
-          <div class="option">
-            <span> a:Node.js</span>
-            <div class="icon"><i class="fas fa-check"></i></div>
-          </div>
-          <div class="option">
-            <span> a:Node.js</span>
-            <div class="icon"><i class="fas fa-check"></i></div>
-          </div>
-        </div>
+        <div class="question-text"></div>
+        <div class="option-list"></div>
       </section>
+      <footer class="card-footer">
+        <div class="question_index"></div>
+        <button class="next_btn btn btn-primary btn-sm">Sonraki sual</button>
+      </footer>
+    </div>
+    <div class="card score-box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="score-text"></div>
+      <div class="buttons">
+        <button class="btn btn-primary btn-replay">Replay</button>
+        <button class="btn btn-primary btn-quit">Quit</button>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -62,6 +62,9 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+    <script src="ui.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
